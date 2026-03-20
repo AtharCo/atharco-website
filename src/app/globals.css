@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --forest: #283618;
+  --olive: #606c38;
+  --gold: #bc6c25;
+  --cream: #fefae0;
+  --light-olive: #e9edc9;
+  --background: #fefae0;
+  --foreground: #283618;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-forest: #283618;
+  --color-olive: #606c38;
+  --color-gold: #bc6c25;
+  --color-cream: #fefae0;
+  --color-light-olive: #e9edc9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--forest);
+  font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', system-ui, sans-serif;
+}
+
+::selection {
+  background-color: #bc6c25;
+  color: #fefae0;
+}

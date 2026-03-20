@@ -1,0 +1,92 @@
+const features = [
+  {
+    icon: "🖥️",
+    title: "Build Your Own POS",
+    description:
+      "A modular ecosystem of microservices. Assemble a management solution tailored to your specific needs — no code required.",
+  },
+  {
+    icon: "🎯",
+    title: "Smart Loyalty System",
+    description:
+      "Automated loyalty programs that bring customers back — with proven 4.7x ROI on every point spent.",
+  },
+  {
+    icon: "🤖",
+    title: "AI That Actually Helps",
+    description:
+      "Churn prediction. Menu optimization. Demand forecasting. Noqta doesn't just collect data — it tells you what to do with it.",
+  },
+  {
+    icon: "📊",
+    title: "Real-Time Analytics",
+    description:
+      "Know your best-selling item, your peak hours, and your most valuable customers — all updated in real time.",
+  },
+  {
+    icon: "💬",
+    title: "WhatsApp-Native",
+    description:
+      "Order notifications, loyalty updates, and marketing campaigns — all through the app your customers already use.",
+  },
+  {
+    icon: "🏪",
+    title: "Multi-Location Ready",
+    description:
+      "One dashboard for all your branches. Centralized menu, decentralized operations.",
+  },
+];
+
+export default function Noqta() {
+  return (
+    <section id="noqta" className="bg-cream py-24">
+      <div className="max-w-6xl mx-auto px-6">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 bg-light-olive text-forest px-4 py-1.5 rounded-full text-sm font-medium mb-6">
+            <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+            Now Accepting Beta Partners
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-forest mb-4">
+            Meet <span className="text-gold">Noqta</span>
+          </h2>
+          <p className="text-lg text-olive max-w-2xl mx-auto leading-relaxed">
+            The AI-Powered POS Platform for Restaurants. Owners no longer change their business
+            workflow to fit a service provider — they build the software to fit the workflow.
+          </p>
+        </div>
+
+        {/* Feature Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {features.map((feature) => (
+            <div
+              key={feature.title}
+              className="bg-light-olive/40 rounded-2xl p-6 border border-light-olive hover:border-gold transition-all hover:shadow-lg"
+            >
+              <div className="text-3xl mb-3">{feature.icon}</div>
+              <h3 className="text-lg font-bold text-forest mb-2">
+                {feature.title}
+              </h3>
+              <p className="text-sm text-olive leading-relaxed">
+                {feature.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div className="text-center mt-12">
+          <a
+            href="#waitlist"
+            className="inline-block bg-gold text-cream px-8 py-4 rounded-lg text-lg font-semibold hover:bg-forest transition-colors"
+          >
+            Join the Noqta Waitlist →
+          </a>
+          <p className="text-sm text-olive mt-4">
+            Currently in beta with select restaurant partners. Launching broadly in 2026.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
