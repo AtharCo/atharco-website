@@ -37,9 +37,7 @@ export default function Impact() {
             </div>
           </div>
 
-          <div className="mt-10 text-cream/60 text-sm">
-            Built with ❤️ in Ramallah, Palestine 🇵🇸
-          </div>
+
         </div>
       </div>
     </section>
