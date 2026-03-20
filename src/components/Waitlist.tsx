@@ -1,29 +1,32 @@
 "use client";
 
 import { useState } from "react";
+import { supabase } from "@/lib/supabase";
 
 export default function Waitlist() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
+    setError("");
 
-    // For now, just simulate submission
-    // TODO: Connect to Supabase to store waitlist entries
     const formData = new FormData(e.currentTarget);
-    const data = {
-      email: formData.get("email"),
-      phone: formData.get("phone"),
-      restaurant: formData.get("restaurant"),
-      city: formData.get("city"),
-    };
 
-    console.log("Waitlist submission:", data);
+    const { error: dbError } = await supabase.from("waitlist").insert({
+      email: formData.get("email") as string,
+      phone: formData.get("phone") as string,
+      restaurant_name: formData.get("restaurant") as string,
+      city: formData.get("city") as string,
+    });
 
-    // Simulate network delay
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    if (dbError) {
+      setError("Something went wrong. Please try again or contact us directly.");
+      setLoading(false);
+      return;
+    }
 
     setSubmitted(true);
     setLoading(false);
@@ -119,6 +122,10 @@ export default function Waitlist() {
                 />
               </div>
             </div>
+
+            {error && (
+              <p className="text-red-600 text-sm mt-2">{error}</p>
+            )}
 
             <button
               type="submit"
