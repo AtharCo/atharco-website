@@ -48,7 +48,7 @@ export default function Team() {
           {team.map((member) => (
             <div
               key={member.name}
-              className="bg-cream rounded-2xl p-8 border border-cream hover:border-gold transition-colors"
+              className="bg-cream rounded-2xl p-8 border border-cream hover:border-gold transition-colors flex flex-col"
             >
               {/* Avatar Circle */}
               <div className="w-16 h-16 rounded-full bg-forest flex items-center justify-center text-cream text-xl font-bold mb-5">
@@ -56,8 +56,8 @@ export default function Team() {
               </div>
               <h3 className="text-xl font-bold text-forest">{member.name}</h3>
               <p className="text-gold font-medium text-sm mb-3">{member.title}</p>
-              <p className="text-olive text-sm leading-relaxed mb-4">{member.bio}</p>
-              <div className="flex flex-wrap gap-3">
+              <p className="text-olive text-sm leading-relaxed mb-4 flex-grow">{member.bio}</p>
+              <div className="flex flex-wrap gap-3 mt-auto">
                 {member.linkedin && (
                   <a
                     href={member.linkedin}
