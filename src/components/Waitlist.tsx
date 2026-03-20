@@ -15,6 +15,7 @@ export default function Waitlist() {
     const formData = new FormData(e.currentTarget);
     const data = {
       email: formData.get("email"),
+      phone: formData.get("phone"),
       restaurant: formData.get("restaurant"),
       city: formData.get("city"),
     };
@@ -75,20 +76,33 @@ export default function Waitlist() {
                   id="email"
                   name="email"
                   required
-                  placeholder="you@restaurant.com"
+                  placeholder="your@email.com"
+                  className="w-full px-4 py-3 rounded-lg border border-light-olive bg-cream text-forest placeholder:text-olive/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent"
+                />
+              </div>
+              <div>
+                <label htmlFor="phone" className="block text-sm font-semibold text-forest mb-2">
+                  Phone / WhatsApp *
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  placeholder="+972 5XX XXX XXX"
                   className="w-full px-4 py-3 rounded-lg border border-light-olive bg-cream text-forest placeholder:text-olive/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent"
                 />
               </div>
               <div>
                 <label htmlFor="restaurant" className="block text-sm font-semibold text-forest mb-2">
-                  Restaurant Name *
+                  Business Name *
                 </label>
                 <input
                   type="text"
                   id="restaurant"
                   name="restaurant"
                   required
-                  placeholder="Sam's Restaurant"
+                  placeholder="Your restaurant or café"
                   className="w-full px-4 py-3 rounded-lg border border-light-olive bg-cream text-forest placeholder:text-olive/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent"
                 />
               </div>
@@ -101,7 +115,7 @@ export default function Waitlist() {
                   id="city"
                   name="city"
                   required
-                  placeholder="Ramallah"
+                  placeholder="Your city"
                   className="w-full px-4 py-3 rounded-lg border border-light-olive bg-cream text-forest placeholder:text-olive/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent"
                 />
               </div>
