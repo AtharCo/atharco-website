@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     "loyalty",
     "Palestine",
   ],
+  icons: {
+    icon: "/icon.svg",
+  },
   openGraph: {
     title: "AtharCo — Where Ambition Becomes Legacy",
     description:
