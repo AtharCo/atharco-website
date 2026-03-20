@@ -35,18 +35,14 @@ export default function Vision() {
 
         {/* Timeline */}
         <div className="grid md:grid-cols-3 gap-8">
-          {milestones.map((milestone, index) => (
-            <div key={milestone.year} className="relative">
-              {/* Connector Line (desktop) */}
-              {index < milestones.length - 1 && (
-                <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-olive/30 -translate-x-1/2"></div>
-              )}
-              <div className="bg-olive/20 rounded-2xl p-8 border border-olive/30">
+          {milestones.map((milestone) => (
+            <div key={milestone.year}>
+              <div className="bg-olive/20 rounded-2xl p-8 border border-olive/30 h-full flex flex-col">
                 <span className="text-gold text-3xl font-bold">{milestone.year}</span>
                 <h3 className="text-xl font-bold text-cream mt-3 mb-2">
                   {milestone.title}
                 </h3>
-                <p className="text-light-olive leading-relaxed">
+                <p className="text-light-olive leading-relaxed flex-grow">
                   {milestone.description}
                 </p>
               </div>
