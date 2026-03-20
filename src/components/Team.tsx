@@ -24,7 +24,7 @@ const team = [
     linkedin: null,
     github: null,
     email: null,
-    initial: "🥔",
+    initial: "BL",
   },
 ];
 

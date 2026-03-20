@@ -49,7 +49,6 @@ export default function Waitlist() {
         {submitted ? (
           /* Success State */
           <div className="bg-cream rounded-2xl p-10 text-center border border-gold">
-            <div className="text-5xl mb-4">🎉</div>
             <h3 className="text-2xl font-bold text-forest mb-2">You&apos;re on the list!</h3>
             <p className="text-olive">
               We&apos;ll be in touch soon. In the meantime, feel free to reach out directly:

@@ -1,18 +1,15 @@
 const features = [
   {
-    icon: "🧠",
     title: "AI-Native",
     description:
       "Every product is built with artificial intelligence at its core — not bolted on as an afterthought.",
   },
   {
-    icon: "📊",
     title: "Data-Driven",
     description:
       "We turn every transaction, every customer interaction, and every data point into actionable intelligence.",
   },
   {
-    icon: "🌱",
     title: "Builder-Driven",
     description:
       "We focus on creating high-impact infrastructure where profit is a byproduct of solving genuine problems.",
@@ -43,7 +40,6 @@ export default function WhatWeDo() {
               key={feature.title}
               className="bg-cream rounded-2xl p-8 border border-cream hover:border-gold transition-colors"
             >
-              <div className="text-4xl mb-4">{feature.icon}</div>
               <h3 className="text-xl font-bold text-forest mb-3">
                 {feature.title}
               </h3>

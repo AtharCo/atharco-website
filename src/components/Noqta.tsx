@@ -1,36 +1,30 @@
 const features = [
   {
-    icon: "🖥️",
     title: "Build Your Own POS",
     description:
       "A modular ecosystem of microservices. Assemble a management solution tailored to your specific needs — no code required.",
   },
   {
-    icon: "🎯",
     title: "Smart Loyalty System",
     description:
       "Automated loyalty programs that bring customers back — with proven 4.7x ROI on every point spent.",
   },
   {
-    icon: "🤖",
     title: "AI That Actually Helps",
     description:
       "Churn prediction. Menu optimization. Demand forecasting. Noqta doesn't just collect data — it tells you what to do with it.",
   },
   {
-    icon: "📊",
     title: "Real-Time Analytics",
     description:
       "Know your best-selling item, your peak hours, and your most valuable customers — all updated in real time.",
   },
   {
-    icon: "💬",
     title: "WhatsApp-Native",
     description:
       "Order notifications, loyalty updates, and marketing campaigns — all through the app your customers already use.",
   },
   {
-    icon: "🏪",
     title: "Multi-Location Ready",
     description:
       "One dashboard for all your branches. Centralized menu, decentralized operations.",
@@ -44,7 +38,7 @@ export default function Noqta() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-light-olive text-forest px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-            <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+            <span className="w-2 h-2 bg-gold rounded-full"></span>
             Now Accepting Beta Partners
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-forest mb-4">
@@ -63,7 +57,6 @@ export default function Noqta() {
               key={feature.title}
               className="bg-light-olive/40 rounded-2xl p-6 border border-light-olive hover:border-gold transition-all hover:shadow-lg"
             >
-              <div className="text-3xl mb-3">{feature.icon}</div>
               <h3 className="text-lg font-bold text-forest mb-2">
                 {feature.title}
               </h3>

@@ -36,12 +36,7 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Decorative Element */}
-        <div className="mt-20 flex justify-center gap-3">
-          <div className="w-2 h-2 rounded-full bg-forest"></div>
-          <div className="w-2 h-2 rounded-full bg-olive"></div>
-          <div className="w-2 h-2 rounded-full bg-gold"></div>
-        </div>
+
       </div>
     </section>
   );

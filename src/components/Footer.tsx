@@ -62,7 +62,7 @@ export default function Footer() {
             © 2026 AtharCo Holdings. All rights reserved.
           </p>
           <p className="text-sm text-light-olive/40">
-            Built in Palestine 🇵🇸 · Powered by AI 🤖
+            Palestinian-Founded · AI-Powered
           </p>
         </div>
       </div>
