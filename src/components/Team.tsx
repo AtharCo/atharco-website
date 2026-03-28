@@ -36,12 +36,9 @@ export default function Team() {
         <p className="text-gold font-semibold text-sm tracking-widest uppercase mb-4">
           The Team
         </p>
-        <h2 className="text-4xl md:text-5xl font-bold text-forest mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold text-forest mb-16">
           Built by Builders
         </h2>
-        <p className="text-lg text-olive max-w-3xl mb-16 leading-relaxed">
-          A lean team with outsized ambition. We don&apos;t just talk about AI — we run on it.
-        </p>
 
         {/* Team Cards */}
         <div className="grid md:grid-cols-3 gap-8">

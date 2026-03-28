@@ -2,22 +2,22 @@ const features = [
   {
     title: "Build Your Own POS",
     description:
-      "A modular ecosystem of microservices. Assemble a management solution tailored to your specific needs — no code required.",
+      "A modular ecosystem of microservices. Assemble management solutions tailored to your specific needs, no code required.",
   },
   {
     title: "Smart Loyalty System",
     description:
-      "Automated loyalty programs that bring customers back — with proven 4.7x ROI on every point spent.",
+      "Automated loyalty programs that bring customers back — designed to maximize repeat visits and revenue per customer.",
   },
   {
     title: "AI That Actually Helps",
     description:
-      "Churn prediction. Menu optimization. Demand forecasting. Noqta doesn't just collect data — it tells you what to do with it.",
+      "Predict which customers might stop coming back. Find out which menu items to promote. Know what to prepare before the rush. Noqta analyzes your data and tells you what to do with it.",
   },
   {
     title: "Real-Time Analytics",
     description:
-      "Know your best-selling item, your peak hours, and your most valuable customers — all updated in real time.",
+      "Know your best-selling items, your peak hours, and your most valuable customers.",
   },
   {
     title: "WhatsApp-Native",
@@ -37,16 +37,12 @@ export default function Noqta() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-light-olive text-forest px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-            <span className="w-2 h-2 bg-gold rounded-full"></span>
-            Now Accepting Beta Partners
-          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-forest mb-4">
             Meet <span className="text-gold">Noqta</span>
           </h2>
           <p className="text-lg text-olive max-w-2xl mx-auto leading-relaxed">
-            The AI-Powered POS Platform for Restaurants. Owners no longer change their business
-            workflow to fit a service provider — they build the software to fit the workflow.
+            The AI-Powered POS Platform for Restaurants. Owners no longer have to change their business
+            workflow to accommodate a service provider — they build the software to fit their own workflow.
           </p>
         </div>
 
@@ -67,8 +63,13 @@ export default function Noqta() {
           ))}
         </div>
 
-        {/* CTA */}
+        {/* CTA - Beta badge moved here per Arafat's feedback */}
         <div className="text-center mt-12">
+          <div className="inline-flex items-center gap-2 bg-light-olive text-forest px-4 py-1.5 rounded-full text-sm font-medium mb-6">
+            <span className="w-2 h-2 bg-gold rounded-full"></span>
+            Now Accepting Beta Partners
+          </div>
+          <br />
           <a
             href="#waitlist"
             className="inline-block bg-gold text-cream px-8 py-4 rounded-lg text-lg font-semibold hover:bg-forest transition-colors"
