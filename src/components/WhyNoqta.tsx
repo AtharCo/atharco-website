@@ -1,7 +1,7 @@
 const reasons = [
   {
-    title: "Cheaper than the big guys",
-    description: "Foodics charges 200-500 JOD per month. We start at 25 JOD/month. Same results, fraction of the cost.",
+    title: "Affordable for any size",
+    description: "Enterprise POS systems charge hundreds per month for features you don't need. We price fairly based on what you actually use.",
   },
   {
     title: "Smarter than paper",
