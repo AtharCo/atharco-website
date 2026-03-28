@@ -52,8 +52,7 @@ export default function Team() {
                 {member.initial}
               </div>
               <h3 className="text-xl font-bold text-forest">{member.name}</h3>
-              <p className="text-gold font-medium text-sm mb-3">{member.title}</p>
-              <p className="text-olive text-sm leading-relaxed mb-4 flex-grow">{member.bio}</p>
+              <p className="text-gold font-medium text-sm mb-4">{member.title}</p>
               <div className="flex flex-wrap gap-3 mt-auto">
                 {member.linkedin && (
                   <a
