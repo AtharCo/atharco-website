@@ -1,11 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import WhatWeDo from "@/components/WhatWeDo";
-import Noqta from "@/components/Noqta";
-import Vision from "@/components/Vision";
+import Services from "@/components/Services";
+import WhyNoqta from "@/components/WhyNoqta";
 import Team from "@/components/Team";
 import Impact from "@/components/Impact";
-import Waitlist from "@/components/Waitlist";
+import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -13,12 +12,11 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <WhatWeDo />
-      <Noqta />
-      <Vision />
-      <Team />
+      <Services />
+      <WhyNoqta />
       <Impact />
-      <Waitlist />
+      <Team />
+      <ContactForm />
       <Footer />
     </main>
   );
