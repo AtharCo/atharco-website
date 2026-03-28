@@ -19,8 +19,8 @@ export default function ContactForm() {
       restaurant_name: formData.get("business") as string,
       city: formData.get("city") as string,
       phone: formData.get("phone") as string,
-      email: formData.get("email") as string,
-      notes: formData.get("needs") as string,
+      email: (formData.get("email") as string) || null,
+      notes: (formData.get("needs") as string) || null,
     });
 
     if (dbError) {
