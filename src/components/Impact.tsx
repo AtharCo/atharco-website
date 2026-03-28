@@ -18,9 +18,9 @@ export default function Impact() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { value: "Jordan & Palestine", label: "Where We Operate" },
+            { value: "MENA", label: "Where We Operate" },
             { value: "F&B", label: "Our Focus" },
-            { value: "Month-to-month", label: "No Contracts" },
+            { value: "No Lock-in", label: "Cancel Anytime" },
             { value: "2026", label: "Founded" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">

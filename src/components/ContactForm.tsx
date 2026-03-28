@@ -90,7 +90,7 @@ export default function ContactForm() {
                     id="city"
                     name="city"
                     required
-                    placeholder="e.g. Amman, Jordan"
+                    placeholder="e.g. Amman, Ramallah, Nablus..."
                     className="w-full px-4 py-3 rounded-lg border border-light-olive bg-cream text-forest placeholder:text-olive/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent"
                   />
                 </div>
@@ -103,7 +103,7 @@ export default function ContactForm() {
                     id="phone"
                     name="phone"
                     required
-                    placeholder="+962 7XX XXX XXX"
+                    placeholder="+962 / +970 / +972"
                     className="w-full px-4 py-3 rounded-lg border border-light-olive bg-cream text-forest placeholder:text-olive/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent"
                   />
                 </div>
