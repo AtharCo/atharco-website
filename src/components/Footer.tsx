@@ -20,7 +20,7 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-4">
-            <a href="https://wa.me/972599488371" target="_blank" rel="noopener noreferrer" className="text-sm text-light-olive/60 hover:text-gold transition-colors">WhatsApp</a>
+            <a href="https://wa.me/970599488371" target="_blank" rel="noopener noreferrer" className="text-sm text-light-olive/60 hover:text-gold transition-colors">WhatsApp</a>
             <a href="mailto:ehabtahboub@gmail.com" className="text-sm text-light-olive/60 hover:text-gold transition-colors">Email</a>
             <a href="https://www.linkedin.com/in/ehab-tahboub/" target="_blank" rel="noopener noreferrer" className="text-sm text-light-olive/60 hover:text-gold transition-colors">LinkedIn</a>
           </div>
@@ -28,7 +28,11 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-olive/20 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-light-olive/40">&copy; 2026 AtharCo Holdings. All rights reserved.</p>
-          <p className="text-sm text-light-olive/40">Palestinian-Founded &middot; Jordan &amp; Palestine</p>
+          <div className="flex items-center gap-4">
+            <a href="https://wa.me/972599488371" target="_blank" rel="noopener noreferrer" className="text-sm text-light-olive/40 hover:text-gold transition-colors">WhatsApp</a>
+            <a href="/privacy" className="text-sm text-light-olive/40 hover:text-gold transition-colors">Privacy Policy</a>
+            <a href="/terms" className="text-sm text-light-olive/40 hover:text-gold transition-colors">Terms of Service</a>
+          </div>
         </div>
       </div>
     </footer>
