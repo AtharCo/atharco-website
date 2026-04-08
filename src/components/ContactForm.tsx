@@ -56,7 +56,7 @@ export default function ContactForm() {
               Thanks for reaching out. We&apos;ll contact you within 24 hours to schedule a demo.
             </p>
             <a
-              href="https://wa.me/972599488371"
+              href="https://wa.me/970599488371"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-2 bg-gold text-cream px-6 py-3 rounded-lg font-semibold hover:bg-forest transition-colors"
@@ -146,7 +146,7 @@ export default function ContactForm() {
 
             <p className="text-center text-sm text-olive mt-4">
               Or reach us directly on{" "}
-              <a href="https://wa.me/972599488371" target="_blank" rel="noopener noreferrer" className="text-gold hover:text-forest transition-colors font-medium">
+              <a href="https://wa.me/970599488371" target="_blank" rel="noopener noreferrer" className="text-gold hover:text-forest transition-colors font-medium">
                 WhatsApp
               </a>
               {" "}or{" "}
